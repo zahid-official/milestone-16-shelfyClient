@@ -6,8 +6,8 @@
 
 A comprehensive, user-friendly web application for streamlined library operations built with React, TypeScript and modern web technologies.
 
-[![Backend Repo](https://img.shields.io/badge/Backend--Side-Repository-4CAF50?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://github.com/zahid-official/milestone-16-server)
-[![GitHub Repo](https://img.shields.io/badge/Client--Side-Repository-181717?style=for-the-badge&logo=github)](https://github.com/zahid-official/milestone-16-client)
+[![Backend Repo](https://img.shields.io/badge/Backend-Repository-4CAF50?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://github.com/zahid-official/milestone-16-shelfyServer)
+[![GitHub Repo](https://img.shields.io/badge/Frontend-Repository-181717?style=for-the-badge&logo=github)](https://github.com/zahid-official/milestone-16-shelfyClient)
 <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
 <img src="https://img.shields.io/badge/Redux_Toolkit-764ABC?style=for-the-badge&logo=redux&logoColor=white" alt="Redux Toolkit" />
@@ -21,13 +21,14 @@ A comprehensive, user-friendly web application for streamlined library operation
 
 > **Shelfy** is a production-ready, full-featured web application that serves as the visual interface for the Shelfy ecosystem. It provides an intuitive, responsive experience for browsing books, managing inventory, and tracking borrow activities.
 
-This repository focuses exclusively on the **Client-Side UI**, consuming the RESTful API from the [Shelfy Backend Server](https://github.com/zahid-official/milestone-16-server).
+This repository focuses exclusively on the **Client-Side UI**, consuming the RESTful API from the [Shelfy Backend Server](https://github.com/zahid-official/milestone-16-shelfyServer).
 
 <br/>
 
 ## ✨ Key Features
 
 ### 📚 Book Management
+
 <table align="center">
 <thead>
 <tr><th align="left">Feature</th><th align="left">Description</th></tr>
@@ -41,6 +42,7 @@ This repository focuses exclusively on the **Client-Side UI**, consuming the RES
 </table>
 
 ### 🔄 Borrowing System
+
 <table align="center">
 <thead>
 <tr><th align="left">Feature</th><th align="left">Description</th></tr>
@@ -54,6 +56,7 @@ This repository focuses exclusively on the **Client-Side UI**, consuming the RES
 </table>
 
 ### 🎨 UI & Developer Experience
+
 <table align="center">
 <thead>
 <tr><th align="left">Feature</th><th align="left">Description</th></tr>
@@ -98,32 +101,32 @@ This repository focuses exclusively on the **Client-Side UI**, consuming the RES
 
 ## 🏗️ Architecture
 
-<div align="center">
+<div>
 <pre>
-┌───────────────────────────────────────────────────┐
-│                    Browser Client                  │
-│              React 19 + TypeScript + Vite          │
-└──────────────────────┬────────────────────────────┘
-                       │
-┌──────────────────────▼────────────────────────────┐
-│                  React Router v7                   │
-│   /    /books   /create-book   /borrow/:id   ...  │
-└───────┬───────────────────────────────┬────────────┘
-        │                               │
-┌───────▼──────────┐       ┌────────────▼────────────┐
-│   Page Components │       │   Redux Store           │
-│  (Layouts/Pages)  │       │   RTK Query Slices      │
-└───────┬──────────┘       └────────────┬────────────┘
-        │                               │
-┌───────▼───────────────────────────────▼────────────┐
-│              Shared Components (Radix UI /          │
-│              Lucide Icons / Tailwind CSS)           │
-└────────────────────────────┬───────────────────────┘
-                             │ HTTP (RTK Query)
-┌────────────────────────────▼───────────────────────┐
-│            Shelfy Backend REST API                  │
-│         Node.js · Express · MongoDB                │
-└────────────────────────────────────────────────────┘
+                           ┌───────────────────────────────────────────────────┐
+                           │                    Browser Client                 │
+                           │              React 19 + TypeScript + Vite         │
+                           └──────────────────────┬────────────────────────────┘
+                                                │
+                           ┌──────────────────────▼────────────────────────────┐
+                           │                  React Router v7                  │
+                           │       /books   /create-book   /borrow/:id         │
+                           └───────────┬───────────────────────────────┬───────┘
+                                       │                               │
+                           ┌───────────▼──────────┐       ┌────────────▼────────────┐
+                           │   Page Components    │       │   Redux Store           │
+                           │  (Layouts/Pages)     │       │   RTK Query Slices      │
+                           └───────────┬──────────┘       └────────────┬────────────┘
+                                       │                               │
+                           ┌───────────▼───────────────────────────────▼───────────┐
+                           │              Shared Components (Radix UI /            │
+                           │              Lucide Icons / Tailwind CSS)             │
+                           └────────────────────────────┬──────────────────────────┘
+                                                      │ HTTP (RTK Query)
+                           ┌────────────────────────────▼──────────────────────────┐
+                           │            Shelfy Backend REST API                    │
+                           │         Node.js · Express · MongoDB                   │
+                           └───────────────────────────────────────────────────────┘
 </pre>
 </div>
 
@@ -170,7 +173,7 @@ milestone-16-client/
 </thead>
 <tbody>
 <tr><td><b>Node.js</b></td><td>v18 or higher</td></tr>
-<tr><td><b>Backend Server</b></td><td><a href="https://github.com/zahid-official/milestone-16-server">Shelfy Backend</a> running on port 3000</td></tr>
+<tr><td><b>Backend Server</b></td><td><a href="https://github.com/zahid-official/milestone-16-shelfyServer">Shelfy Backend</a> running on port 3000</td></tr>
 <tr><td><b>Package Manager</b></td><td>npm or yarn</td></tr>
 </tbody>
 </table>
@@ -178,12 +181,14 @@ milestone-16-client/
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
-   git clone https://github.com/zahid-official/milestone-16-client.git
+   git clone https://github.com/zahid-official/milestone-16-shelfyClient.git
    cd milestone-16-client
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
@@ -191,6 +196,7 @@ milestone-16-client/
 3. **Configure environment variables**
 
    Create a `.env.local` file in the root directory:
+
    ```env
    VITE_API_BASE_URL=http://localhost:3000/api
    ```
@@ -256,28 +262,28 @@ milestone-16-client/
 
 **Data Flow:**
 
-<div align="center">
+<div>
 <pre>
- User Interaction (e.g. Borrow a Book)
-                │
-                ▼
-  React Component dispatches RTK Query mutation
-                │
-                ▼
-  RTK Query sends POST /api/borrow to backend
-                │
-         ┌──────┴───────┐
-         │              │
-         ▼              ▼
-      Success?       Error?
-         │              │
-         ▼              ▼
-  Invalidates cache  Sonner toast
-  Auto-refetches     shows error
-  book list data     message
-         │
-         ▼
-  UI updates instantly with fresh data
+                                 User Interaction (e.g. Borrow a Book)
+                                                   │
+                                                   ▼
+                              React Component dispatches RTK Query mutation
+                                                   │
+                                                   ▼
+                               RTK Query sends POST /api/borrow to backend
+                                                    │
+                                             ┌──────┴───────┐
+                                             │              │
+                                             ▼              ▼
+                                          Success?       Error?
+                                             │              │
+                                             ▼              ▼
+                                    Invalidates cache  Sonner toast
+                                    Auto-refetches     shows error
+                                    book list data     message
+                                             │
+                                             ▼
+                                   UI updates instantly with fresh data
 </pre>
 </div>
 
@@ -287,6 +293,23 @@ milestone-16-client/
 4. **Cache invalidated on success** — related queries auto-refetch for fresh data
 5. **Sonner notifies user** — toast confirms success or surfaces error message
 6. **UI reflects new state** — components re-render with updated Redux store data
+
+<br/>
+
+<div align="center">
+
+<img src="https://github.com/zahid-official.png" alt="Zahid Official" width="80" style="border-radius: 50%;" />
+
+<h3>Zahid Official</h3>
+<p><b>Web Developer | Tech Enthusiast</b></p>
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zahid-official)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/zahid-web)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:zahid.official8@gmail.com)
+
+<p>Transforming complex requirements into fluid, high-performance digital realities.</p>
+
+</div>
 
 <br/>
 
@@ -310,25 +333,7 @@ git push origin feature/your-feature-name
 # 6. Open a Pull Request on GitHub
 ```
 
-<br/>
 
 <div align="center">
-
-<img src="https://github.com/zahid-official.png" alt="Zahid Official" width="80" style="border-radius: 50%;" />
-
-<h3>Zahid Official</h3>
-<p><b>Web Developer | Tech Enthusiast</b></p>
-
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zahid-official)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/zahid-web)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:zahid.official8@gmail.com)
-
-<p>Crafting robust, type-safe UIs and clean architectural solutions.</p>
-
-</div>
-
-<br/>
-
-<div align="center">
-<p><b>Shelfy</b> - <i>Your books, managed with precision.</i></p>
+<p><b>Shelfy</b> - <i>Redefining library efficiency through seamless digital innovation.</i></p>
 </div>
