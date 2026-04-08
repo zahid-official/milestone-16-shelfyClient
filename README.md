@@ -103,29 +103,29 @@ This repository focuses exclusively on the **Client-Side UI**, consuming the RES
 
 <div>
 <pre>
-                           ┌───────────────────────────────────────────────────┐
-                           │                    Browser Client                 │
-                           │              React 19 + TypeScript + Vite         │
-                           └──────────────────────┬────────────────────────────┘
-                                                │
-                           ┌──────────────────────▼────────────────────────────┐
-                           │                  React Router v7                  │
-                           │       /books   /create-book   /borrow/:id         │
-                           └───────────┬───────────────────────────────┬───────┘
+                           ┌───────────────────────────────────────────────────────┐
+                           │                    Browser Client                     │
+                           │              React 19 + TypeScript + Vite             │
+                           └──────────────────────────────┬────────────────────────┘
+                                                          │
+                           ┌──────────────────────────────▼────────────────────────┐
+                           │                  React Router v7                      │
+                           │       /books   /create-book   /borrow/:id             │
+                           └───────────┬───────────────────────────────┬───────────┘
                                        │                               │
-                           ┌───────────▼──────────┐       ┌────────────▼────────────┐
-                           │   Page Components    │       │   Redux Store           │
-                           │  (Layouts/Pages)     │       │   RTK Query Slices      │
-                           └───────────┬──────────┘       └────────────┬────────────┘
+                           ┌───────────▼──────────┐       ┌────────────▼───────────┐
+                           │   Page Components    │       │   Redux Store          │
+                           │  (Layouts/Pages)     │       │   RTK Query Slices     │
+                           └───────────┬──────────┘       └────────────┬───────────┘
                                        │                               │
                            ┌───────────▼───────────────────────────────▼───────────┐
                            │              Shared Components (Radix UI /            │
                            │              Lucide Icons / Tailwind CSS)             │
                            └────────────────────────────┬──────────────────────────┘
-                                                      │ HTTP (RTK Query)
+                                                        │     HTTP (RTK Query)
                            ┌────────────────────────────▼──────────────────────────┐
-                           │            Shelfy Backend REST API                    │
-                           │         Node.js · Express · MongoDB                   │
+                           │                Shelfy Backend REST API                │
+                           │           Node.js · Express · MongoDB                 │
                            └───────────────────────────────────────────────────────┘
 </pre>
 </div>
