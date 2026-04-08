@@ -296,19 +296,21 @@ milestone-16-client/
 
 <br/>
 
+## 🌟 Author
+
 <div align="center">
+  <a href="https://github.com/zahid-official">
+    <img src="https://github.com/zahid-official.png" width="100" height="100" style="border-radius: 50%;" alt="Zahid Official" />
+  </a>
 
-<img src="https://github.com/zahid-official.png" alt="Zahid Official" width="80" style="border-radius: 50%;" />
-
-<h3>Zahid Official</h3>
-<p><b>Web Developer | Tech Enthusiast</b></p>
+  <h3>Zahid Official</h3>
+  <p><b>Web Developer | Tech Enthusiast</b></p>
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zahid-official)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/zahid-web)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:zahid.official8@gmail.com)
 
-<p>Transforming complex requirements into fluid, high-performance digital realities.</p>
-
+  <p>Creating impactful digital experiences with passion and purposeful design</p>
 </div>
 
 <br/>
